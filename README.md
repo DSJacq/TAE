@@ -1,5 +1,6 @@
 # TheAnalyticsEdge
-TAE edX 2015
+edx + MIT TAE edX 2015
+Tools: R & MSOffice
 
 ### W01 - An Introduction to Analytics
 ### W02 - Linear Regression
