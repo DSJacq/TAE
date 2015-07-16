@@ -1,5 +1,5 @@
 # TheAnalyticsEdge
-edx + MIT TAE edX 2015
+edx + MIT 2015
 
 Tools: R Studio & MO Excel
 
