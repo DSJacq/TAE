@@ -1,4 +1,4 @@
-# TheAnalyticsEdge (Notes & Codes)
+# The Analytics Edge (Notes.R)
 edx + MIT 2015
 
 Tools: R Studio & MO Excel
