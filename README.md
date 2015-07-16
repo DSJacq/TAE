@@ -1,7 +1,7 @@
 # TheAnalyticsEdge
 edx + MIT TAE edX 2015
 
-Tools: R & MO Excel
+Tools: R Studio & MO Excel
 
 ### W01 - An Introduction to Analytics
 ### W02 - Linear Regression
