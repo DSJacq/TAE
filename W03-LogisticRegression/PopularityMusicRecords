@@ -1,0 +1,32 @@
+### TAE W3 - LOGISTIC REGRESSION
+
+# H3 - POPULARITY OF MUSIC RECORDS
+
+# Source: Billboard.com, and EchoNest
+
+
+
+
+# 1. UNDERSTANDING THE DATA  
+
+songs = read.csv("songs.csv")
+str(songs)
+
+table(songs$year == 2010)
+
+MJ = subset(songs, artistname == "Michael Jackson")
+str(MJ) 
+nrow(MJ)
+
+MJ$Top10
+MJ$songtitle[MJ$Top10 == 1]
+
+table(songs$timesignature)
+names(songs)
+songs$songtitle[which.max(songs$tempo)]
+
+
+
+
+
+# 2. CREATING OUR PREDICTION MODEL
