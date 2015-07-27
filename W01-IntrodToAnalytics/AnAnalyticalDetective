@@ -4,7 +4,7 @@
 
 
 
-# LOADING DATA
+### LOADING DATA
 
 mvt = read.csv("mvtWeek1.csv")
 mvt
@@ -19,7 +19,7 @@ table(mvt$LocationDescription == "ALLEY")
 
 
 
-# UNDERSTANDING DATES IN R
+### UNDERSTANDING DATES IN R
 
 names(mvt)
 mvt$Date[1]
