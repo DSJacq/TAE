@@ -4,7 +4,7 @@
 
 # Source:  http://www.baseball-reference.com/
 
-###  MAKING IT TO THE PLAYOFFS(
+###  MAKING IT TO THE PLAYOFFS
 
 baseball = read.csv("baseball.csv")
 str(baseball)
