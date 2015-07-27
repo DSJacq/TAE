@@ -1,4 +1,4 @@
-## TAE >> Moneyball: The Power Of Sports Analytics
+## TAE > Moneyball: The Power Of Sports Analytics
 
 While Moneyball made the use of analytics in sports very popular, baseball is not the only sport for which analytics is used. Analytics is currently used in almost every single sport, including basketball, soccer, cricket, and hockey.
 
