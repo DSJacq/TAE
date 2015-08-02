@@ -2,7 +2,8 @@
 
 # Modeling the Expert: An Introducstion to Logistic Regression
 
-# Source: !
+# Source:
+# URL:
 
 # 1. REPLICATING EXPERT ASSESSMENT
 
