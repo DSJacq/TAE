@@ -2,7 +2,8 @@
 
 ### Playing Moneyball in the NBA
 
-# Source: http://www.basketball-reference.com/
+# Source: Sports Reference
+# URL: http://www.basketball-reference.com/
 
 
 ### THE DATA
