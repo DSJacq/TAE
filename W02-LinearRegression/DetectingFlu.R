@@ -1,6 +1,10 @@
 ### TAE H02 - DETECTING FLU EPIDEMICS VIA SEARCH ENGINE QUERY DATA 
 
-# Source: https://www.google.org/flutrends/us/#US
+# Source: Google
+# URL: https://www.google.org/flutrends/us/#US
+
+
+
 
 # 1.1 UNDERSTANDING THE DATA
 FluTrain = read.csv("FluTrain.csv")
@@ -16,7 +20,7 @@ hist(FluTrain$ILI, col = "light blue", main = "Influenza-Like Illness (ILI)")
 # 1.3 UNDERSTANDING THE DATA
 # Log
 # When handling a skewed dependent variable, it is often useful to predict the 
-#logarithm of the dependent variable instead of the dependent variable itself 
+# logarithm of the dependent variable instead of the dependent variable itself 
 #-- this prevents the small number of unusually large or small observations 
 #from having an undue influence on the sum of squared errors of predictive models.
 plot(FluTrain$Queries, log(FluTrain$ILI), col = "blue")
