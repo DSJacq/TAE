@@ -8,7 +8,6 @@
 
 
 
-
 # 1. LOADING THE DATASET
 
 parole = read.csv("parole.csv")
@@ -35,7 +34,6 @@ library(caTools)
 split = sample.split(parole$violator, SplitRatio = 0.7)
 train = subset(parole, split == TRUE)
 test = subset(parole, split == FALSE)
-
 
 
 
@@ -70,7 +68,6 @@ PredictedProbability
 
 
 
-
 # 5. EVALUATING THE MODEL ON THE TESTING SET
 
 predictions = predict(mod, newdata = test, type = "response")
@@ -91,8 +88,6 @@ spe
 library(ROCR)
 pred = prediction(predictions, test$violator)
 as.numeric(performance(pred, "auc")@y.values)
-
-
 
 
 
