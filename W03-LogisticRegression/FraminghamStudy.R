@@ -2,7 +2,8 @@
 
 # The Framingham Health Study: Evaluating Risk Factors to Save Lives
 
-# Source: BioLINCC (https://biolincc.nhlbi.nih.gov/static/studies/teaching/framdoc.pdf)
+# Source: BioLINCC
+# URL: https://biolincc.nhlbi.nih.gov/static/studies/teaching/framdoc.pdf
 
 
 # 1.THE FRAMINGHAM HEART STUDY
