@@ -4,6 +4,7 @@
 
 
 
+
 ### DATA EXPLORATION  
 
 statedata = read.csv("statedata.csv")
