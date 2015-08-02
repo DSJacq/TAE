@@ -2,7 +2,8 @@
 
 ### The Statistical Sommelier: An Introduction to Linear Regression
 
-# Source: http://www.liquidasset.com/winedata.html
+# Source: Data and Results for Wine Regressions as Reported in Chance Magazine by Ashenfelter, Ashmore and Lalonde
+# URL: http://www.liquidasset.com/winedata.html
 
 
 
