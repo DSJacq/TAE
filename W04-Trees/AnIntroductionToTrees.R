@@ -15,7 +15,6 @@
 
 
 
-
 # 2. CART
 # Dependent Variable | 1 = reverse, 0 = affirm
 # Independent Variable (Circuit court, Issue area, Type of petition, Unconstitutional)
