@@ -2,7 +2,8 @@
 
 # Election Forecasting: Predicting the Winner Before any Votes are Cast
 
-# Source: http://www.realclearpolitics.com/
+# Source: Real Clear Politics
+# URL: http://www.realclearpolitics.com/
 
 
 
