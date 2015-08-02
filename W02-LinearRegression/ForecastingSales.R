@@ -1,7 +1,9 @@
 ### TAE H02 - FORECASTING ELANTRA SALES (OPTIONAL)
 
-> setwd("C:/Users/Jacqueline/Desktop/TheAnalyticEdge2015")
 # Source: monthly sales of the Hyundai Elantra in the United States
+
+
+
 
 # 1.0 LOADING THE DATA  
 Elantra = read.csv("elantra.csv")
