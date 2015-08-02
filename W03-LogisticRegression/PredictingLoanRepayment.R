@@ -8,7 +8,6 @@
 
 
 
-
 # 1. PREPARING THE DATASET
 
 loan = read.csv("loans.csv")
@@ -27,7 +26,6 @@ set.seed(144)
 vars.for.imputation = setdiff(names(loan), "not.fully.pais")
 imputed = complete(mice(loan[vars.for.imputation]))
 loan[vars.for.imputation] = imputed
-
 
 
 
@@ -80,7 +78,6 @@ as.numeric(performance(prediction.bivariate, "auc") @ y.values)
 
 
 
-
 # 4. COMPUTING THE PROFITABILITY OF AN INVESTMENT  
 
 investment  = c
@@ -105,7 +102,6 @@ Profit = c * exp(rt) - c
 test$profit = exp(test$int.rate * 3) - 1
 test$profit[test$not.fully.paid == 1] = -1
 summary(test$profit)
-
 
 
 
