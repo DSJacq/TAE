@@ -2,7 +2,11 @@
 
 ### Moneyball: The Power of Sports Analytics
 
-# Source:  http://www.baseball-reference.com/
+# Source: Sports Reference > Baseball Reference
+# URL: http://www.baseball-reference.com/
+
+
+
 
 ###  MAKING IT TO THE PLAYOFFS
 
