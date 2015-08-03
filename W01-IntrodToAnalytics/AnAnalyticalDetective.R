@@ -2,7 +2,6 @@
 
 
 
-
 ### LOADING DATA
 
 mvt = read.csv("mvtWeek1.csv")
@@ -13,7 +12,6 @@ mvt$ID[which.max(mvt$ID)]
 mvt$Beat[which.min(mvt$Beat)]
 table(mvt$Arrest)
 table(mvt$LocationDescription == "ALLEY")
-
 
 
 
@@ -39,7 +37,6 @@ table(mvt$Arrest, mvt$Month)
 
 
 
-
 ### VISUALIZING CRIME TRENDS  
 
 hist(mvt$Date, breaks=100)
@@ -52,7 +49,6 @@ sum(mvt$Year == 2001 & mvt$Arrest == "TRUE")/sum(mvt$Year == 2001)
 sum(mvt$Year == 2007 & mvt$Arrest == "TRUE")/sum(mvt$Year == 2007)
 # For what proportion of motor vehicle thefts in 2012 was an arrest made?
 sum(mvt$Year == 2012 & mvt$Arrest == "TRUE")/sum(mvt$Year == 2012)
-
 
 
 
