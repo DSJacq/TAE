@@ -5,7 +5,6 @@
 
 
 
-
 ### WORKING WITH DATA IN R
 
 getwd()
@@ -13,7 +12,6 @@ usda = read.csv("USDA.csv")
 usda
 str(usda)
 summary(usda)
-
 
 
 
@@ -40,7 +38,6 @@ sd(usda$Sodium, na.rm = TRUE)
 
 
 
-
 ### CREATING PLOTS IN R
 
 # Plot
@@ -56,7 +53,6 @@ hist(usda$VitaminC, xlab = "Vitamin C (mg)", main = "Histogram of Vitamin C Leve
 
 # Box Plot
 boxplot(usda$Sugar, main = "Boxplot of Sugar Levels", ylab = "Sugar (g)")
-
 
 
 
@@ -80,7 +76,6 @@ usda$HighProtein = as.numeric(usda$Protein > mean(usda$Protein, na.rm = TRUE))
 usda$HighFat = as.numeric(usda$TotalFat > mean(usda$TotalFat, na.rm = TRUE))
 usda$HighCarbs = as.numeric(usda$Carbohydrate > mean(usda$Carbohydrate, na.rm = TRUE))
 str(usda)
-
 
 
 
