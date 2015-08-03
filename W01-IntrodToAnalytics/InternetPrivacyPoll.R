@@ -2,7 +2,8 @@
 
 # INTERNET PRIVACY POLL
 
-# Source: http://www.pewinternet.org/datasets/july-2013-anonymity-omnibus/
+# Source: Pew Research Center
+# URL: http://www.pewinternet.org/datasets/july-2013-anonymity-omnibus/
 
 
 
