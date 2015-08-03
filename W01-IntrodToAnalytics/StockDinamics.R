@@ -1,6 +1,7 @@
 ### TAE W01 - STOCK DYNAMICS
 
-# Source: http://www.infochimps.com/
+# Source: InfoChimps
+# URL: http://www.infochimps.com/
 
 IBM = read.csv("IBMStock.csv")
 GE = read.csv("GEStock.csv")
