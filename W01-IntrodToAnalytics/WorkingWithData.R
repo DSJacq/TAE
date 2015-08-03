@@ -7,7 +7,6 @@ which.min(c(4,1,6))
 
 
 
-
 ### VECTORS AND DATA FRAMES
 
 # A VECTOR  is a series of numbers or characters stored as the same object.
@@ -42,7 +41,6 @@ AllCountryData
 
 
 
-
 ### LOADING DATA FILES
 
 getwd()
@@ -63,7 +61,6 @@ ls()
 # remove csv file
 rm(WHO_Europe)
 ls()
-
 
 
 
@@ -95,7 +92,6 @@ WHO$Country[183]
 # Which country has the largest literacy rate?
 which.max(WHO$LiteracyRate)
 WHO$Country[44]
-
 
 
 
