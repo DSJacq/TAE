@@ -22,7 +22,6 @@ table(cps$Race, cps$Hispanic)
 
 
 
-
 ### EVALUATING MISSING VALUES
 
 summary(cps)
