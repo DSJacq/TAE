@@ -65,3 +65,13 @@ Pred = prediction(PredictROC[,2], Test$Reverse)
 Perf = performance(Pred, "tpr", "fpr")
 plot(Perf)
 
+#AUC
+as.numeric(performance(Pred, "auc")@y.values)
+
+# Splits
+StevensTree = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, method="class", data = Train, minbucket=5)
+prp(StevensTree)
+
+# Splits
+StevensTree = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, method="class", data = Train, minbucket=100)
+prp(StevensTree)
