@@ -31,7 +31,6 @@
 
 
 
-
 # 4. CART IN R
 
 stevens = read.csv("stevens.csv")
@@ -75,3 +74,37 @@ prp(StevensTree)
 # Splits
 StevensTree = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, method="class", data = Train, minbucket=100)
 prp(StevensTree)
+
+
+
+
+
+# 5. RANDOM FORESTS
+
+install.packages("randomForest")
+library(randomForest)
+
+StevensForest = randomForest(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, nodesize = 25, ntree = 200)
+
+Train$Reverse = as.factor(Train$Reverse)
+Test$Reverse = as.factor(Test$Reverse)
+
+StevensForest = randomForest(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, nodesize = 25, ntree = 200)
+PredictForest = predict(StevensForest, newdata = Test)
+
+table(Test$Reverse, PredictForest)
+(40+74)/(40+37+19+74)
+
+#
+set.seed(100)
+StevensForest = randomForest(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, ntree=200, nodesize=25)
+PredictForest = predict(StevensForest, newdata = Test)
+table(Test$Reverse, PredictForest)
+(43+74)/(43+34+19+74)
+
+#
+set.seed(200)
+StevensForest = randomForest(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, ntree=200, nodesize=25)
+PredictForest = predict(StevensForest, newdata = Test)
+table(Test$Reverse, PredictForest)
+(44+76)/(44+33+17+76)
