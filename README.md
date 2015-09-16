@@ -1,8 +1,11 @@
 # The Analytics Edge (Notes.R)
+
 edx + MIT 2015
 
-URL: https://www.edx.org/course/analytics-edge-mitx-15-071x-0
 Tools: RStudio & MO Excel
+
+URL: https://www.edx.org/course/analytics-edge-mitx-15-071x-0
+
 #
 ## W01 - An Introduction to Analytics
 
