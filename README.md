@@ -42,6 +42,12 @@ The Statistical Sommelier
 
 
 ### W04 - Trees
+
+
 ### W05 - Text Analytics
+
+
 ### W06 - Clustering
+
+
 ### W07 - Visualization
