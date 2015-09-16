@@ -9,7 +9,7 @@ URL: https://www.edx.org/course/analytics-edge-mitx-15-071x-0
 #
 ## W01 - An Introduction to Analytics
 
-An Analitical Detective
+An Analytical Detective
 
 Demographics & Employment
 
