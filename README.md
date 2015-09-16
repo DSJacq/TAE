@@ -20,7 +20,27 @@ Working With Data
 
 
 ### W02 - Linear Regression
+
+Climate Change
+
+Detecting Flu
+
+Forecassting Sales
+
+Moneyball in the NBA
+
+Reading Test Scores
+
+State Data
+
+The Power of Sport Analytics
+
+The Statistical Sommelier
+
+
 ### W03 - Logistic Regression
+
+
 ### W04 - Trees
 ### W05 - Text Analytics
 ### W06 - Clustering
