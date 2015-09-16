@@ -17,7 +17,7 @@ Internet Privacy Pooll
 
 Sotocks & Dinamics
 
-Undertanding Food
+Understanding Food
 
 Working With Data
 
