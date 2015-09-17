@@ -43,6 +43,18 @@ The Statistical Sommelier
 
 ## W03 - Logistic Regression
 
+Election Forecasting
+
+Framingham Study
+
+Modeling the Expert
+
+Popularity Music Records
+
+Predicting Loan Repayment
+
+Predicting Parole Violators
+
 
 ## W04 - Trees
 
