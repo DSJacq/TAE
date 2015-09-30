@@ -15,7 +15,7 @@ Demographics & Employment
 
 Internet Privacy Pooll
 
-Sotocks & Dinamics
+Stocks & Dinamics
 
 Understanding Food
 
