@@ -53,3 +53,14 @@ abline(v=as.Date(c("1997-09-01")), lwd=2)
 abline(v=as.Date(c("1997-11-01")), lwd=2)
 abline(v=as.Date(c("2004-01-01")), lwd=2)
 abline(v=as.Date(c("2005-01-01")), lwd=2)
+
+
+### MONTHLY TRENDS
+
+View(IBM)
+mean(IBM$StockPrice)
+tapply(IBM$StockPrice, months(IBM$Date), mean)
+
+tapply(GE$StockPrice, months(GE$Date), mean)
+tapply(CC$StockPrice, months(CC$Date), mean)
+
