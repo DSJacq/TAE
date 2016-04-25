@@ -1,5 +1,5 @@
 
-## Stock Dinamics
+#### Stock Dinamics (Draft Plot)
 
 
 - IBM
