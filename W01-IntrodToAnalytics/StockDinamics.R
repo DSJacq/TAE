@@ -55,6 +55,10 @@ abline(v=as.Date(c("2004-01-01")), lwd=2)
 abline(v=as.Date(c("2005-01-01")), lwd=2)
 
 
+
+
+
+
 ### MONTHLY TRENDS
 
 View(IBM)
