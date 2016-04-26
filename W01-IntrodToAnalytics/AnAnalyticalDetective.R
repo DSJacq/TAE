@@ -25,7 +25,8 @@ DateConvert = as.Date(strptime(mvt$Date, "%m/%d/%y %H:%M"))
 summary(DateConvert)
 median(DateConvert)
 
-# This creates two new variables in our data frame, Month and Weekday, and sets them equal to the month and weekday values that we can extract from the Date object.
+# This creates two new variables in our data frame, Month and Weekday, and sets them equal to the month and weekday values 
+# that we can extract from the Date object.
 mvt$Month = months(DateConvert)
 mvt$Weekday = weekdays(DateConvert)
 mvt$Date = DateConvert
@@ -56,7 +57,13 @@ sum(mvt$Year == 2012 & mvt$Arrest == "TRUE")/sum(mvt$Year == 2012)
 
 sort(table(mvt$LocationDescription))
 
-Top5 = subset(mvt, LocationDescription=="STREET" | LocationDescription=="PARKING LOT/GARAGE(NON.RESID.)" | LocationDescription=="ALLEY" | LocationDescription=="GAS STATION" | LocationDescription=="DRIVEWAY - RESIDENTIAL")
+Top5 = subset(mvt, 
+  LocationDescription=="STREET" | 
+  LocationDescription=="PARKING LOT/GARAGE(NON.RESID.)" | 
+  LocationDescription=="ALLEY" | 
+  LocationDescription=="GAS STATION" | 
+  LocationDescription=="DRIVEWAY - RESIDENTIAL")
+
 Top5
 nrow(Top5)
 str(Top5)
