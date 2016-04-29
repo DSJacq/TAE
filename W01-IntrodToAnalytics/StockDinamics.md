@@ -1,5 +1,5 @@
 
-#### VISUALIZING STOCK DYNAMICS (Draft)
+#### VISUALIZING STOCK DYNAMICS (Chart Draft)
 
 
 - IBM
