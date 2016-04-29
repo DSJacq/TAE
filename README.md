@@ -1,6 +1,6 @@
 # The Analytics Edge (Notes.R)
 
-edx + MIT 2015
+edx + MIT
 
 Tools: RStudio & MO Excel
 
