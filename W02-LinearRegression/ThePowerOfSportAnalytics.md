@@ -10,12 +10,12 @@ The study of analytics in basketball, called APBRmetrics, is very popular. There
 
 ### Soccer
 
-The soccer analytics community is currently growing, and new data is constantly being collected. Many argue that it is much harder to apply analytics to soccer, but there are several books and websites on the topic. Check out "The Numbers Game: Why Everything You Know about Football is Wrong" by Chris Anderson and David Sally, as well as the websites [Soccer Analytics] (http://www.socceranalysts.com) and [Soccermetrics] (http://www.soccermetrics.net).
+The soccer analytics community is currently growing, and new data is constantly being collected. Many argue that it is much harder to apply analytics to soccer, but there are several books and websites on the topic. Check out "The Numbers Game: Why Everything You Know about Football is Wrong" by Chris Anderson and David Sally, as well as the websites [Soccer Analysts] (http://www.socceranalysts.com) and [Soccermetrics] (http://www.soccermetrics.net/).
 
 ### Cricket
 
-There are several websites dedicated to building models for evaluating player performance in cricket. Check out [Crimetric] (http://www.cricmetric.com) and [Impact Index Cricket] (www.impactindexcricket.com).
+There are several websites dedicated to building models for evaluating player performance in cricket. Check out [Crimetric] (http://www.cricmetric.com/) and [Impact Index Cricket] (http://www.impactindexcricket.com/).
 
 ### Hockey 
 
-Analytics are used in hockey to track player performance and to better shape the composition of teams. Check out the websites [Hockey Analytics] (http://www.hockeyanalytics.com) and [Light House Hockey] (http://www.lighthousehockey.com).
+Analytics are used in hockey to track player performance and to better shape the composition of teams. Check out the websites [Hockey Analytics] (http://www.hockeyanalytics.com) and [Light House Hockey] (http://www.lighthousehockey.com/).
