@@ -14,6 +14,6 @@ The csv file FluTrain.csv aggregates this data from January 1, 2004 until Decemb
 
 - "Week" - The range of dates represented by this observation, in year/month/day format.
 
-- "ILI" - This column lists the percentage of ILI-related physician visits for the corresponding week.
+- "ILI" - influenza-like illness. This column lists the percentage of ILI-related physician visits for the corresponding week.
 
 - "Queries" - This column lists the fraction of queries that are ILI-related for the corresponding week, adjusted to be between 0 and 1 (higher values correspond to more ILI-related search queries).
