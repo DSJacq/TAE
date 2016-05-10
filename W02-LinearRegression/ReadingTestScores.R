@@ -52,8 +52,8 @@ DiffpredTest = 637.7 - 353.2
 DiffpredTest
 
 # 4.2 TEST SET SSE AND RMSE
-SST = sum((predTest - pisaTest$readingScore)^2)
-SST
+SSE = sum((predTest - pisaTest$readingScore)^2)
+SSE
 RMSE = sqrt(mean((predTest - pisaTest$readingScore)^2))
 RMSE
 
