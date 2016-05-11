@@ -52,6 +52,7 @@ PredTest1[11]
 
 # 3.2 PERFORMANCE ON THE TEST SET
 # (Observed ILI - Estimated ILI)/Observed ILI
+# relative error betweeen the estimate (our prediction) and the observed value for the week of March 11, 2012
 FluTest$ILI[11]
 PredTest1[11]
 PerfTest = (2.293422 - 2.187378)/2.293422
