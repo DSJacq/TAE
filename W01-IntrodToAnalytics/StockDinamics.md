@@ -16,7 +16,7 @@ plot(CC$Date, CC$StockPrice, type="l", col = "red")
 lines(PG$Date, PG$StockPrice, col = "blue")
 abline(v=as.Date(c("2000-03-01")), lwd=2)
 ```
-![alt tag] (https://raw.githubusercontent.com/DSJacq/Visualization/master/StockDinamics_PG-CC.jpeg)
+![alt tag] (https://github.com/DSJacq/TAE/blob/create-branches/Chart/StockDinamics_PG-CC.jpeg)
 
 
 
@@ -28,6 +28,6 @@ lines(GE$Date, GE$StockPrice, col = "black")
 lines(PG$Date, PG$StockPrice, col = "green")
 lines(Boeing$Date, Boeing$StockPrice, col = "purple")
 ```
-![alt tag] (https://raw.githubusercontent.com/DSJacq/Visualization/master/StockDinamics_IBM-GE.jpeg)
+![alt tag] (https://github.com/DSJacq/TAE/blob/create-branches/Chart/StockDinamics_IBM-GE.jpeg)
 
 
