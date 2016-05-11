@@ -36,6 +36,13 @@ FluTrend1 = lm(log(FluTrain$ILI) ~ Queries, data = FluTrain)
 summary(FluTrend1)
 # R-squared = Correlation^2 
 
+# 2.3 - LINEAR REGRESSION MODEL
+Correlation = cor(FluTrain$Queries, log(FluTrain$ILI))
+Correlation^2             # Correlation^2 is equal to the R-squared value
+log(1/Correlation)
+exp(-0.5*Correlation)
+
+
 # 3.1 PERFORMANCE ON THE TEST SET  
 FluTest = read.csv("FluTest.csv")
 str(FluTest)
