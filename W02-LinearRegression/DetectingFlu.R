@@ -91,6 +91,7 @@ FluTest$ILILag2 = coredata(ILILag2)
 summary(FluTest$ILILag2)
 
 # 5.3 EVALUATING THE TIME SERIES MODEL IN THE TEST SET
+nrow(FluTrain)
 FluTest$ILILag2[1] = FluTrain$ILI[416]
 FluTest$ILILag2[2] = FluTrain$ILI[417]
 FluTest$ILILag2[1]
