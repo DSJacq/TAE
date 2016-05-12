@@ -34,7 +34,8 @@ PredictElantraSales2
 
 # 3.4 NUMERIC VS. FACTORS
 # we must convert Month to a factor variable before adding it to the model.
-# By modeling Month as a factor variable, the effect of each calendar month is not restricted to be linear in the numerical coding of the month. 
+# By modeling Month as a factor variable, the effect of each calendar month is 
+# not restricted to be linear in the numerical coding of the month. 
 
 # 4.1 A NEW MODEL
 ElantraTrain$MonthFactor = as.factor(ElantraTrain$Month)
@@ -68,4 +69,5 @@ R2
 max(abs(PredictTest - ElantraTest$ElantraSales))
 
 # 6.6 MONTH OF LARGEST ERROR  
-which.max(abs(PredictTest - ElantraTest$ElantraSales))
+ElantraTest$Month[which.max(abs(PredictTest - ElantraTest$ElantraSales))]
+ElantraTest$Year[which.max(abs(PredictTest - ElantraTest$ElantraSales))]
