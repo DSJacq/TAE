@@ -27,8 +27,10 @@ summary(LinReg2)
 # 3.3 UNDERSTANDING THE MODEL
 M1 = 3-1
 M2 = 5-1
-PredictElantraSales = 110.69*M2
-PredictElantraSales
+PredictElantraSales1 = 110.69*M1
+PredictElantraSales2 = 110.69*M2
+PredictElantraSales1
+PredictElantraSales2
 
 # 3.4 NUMERIC VS. FACTORS
 # we must convert Month to a factor variable before adding it to the model.
