@@ -49,7 +49,15 @@ library(rpart)
 install.packages("rpart.plot")
 library(rpart.plot)
 
-StevensTree = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, method = "class", minbucket = 25)
+StevensTree = rpart(Reverse ~ Circuit 
+                    + Issue 
+                    + Petitioner 
+                    + Respondent 
+                    + LowerCourt 
+                    + Unconst, 
+                    data = Train, 
+                    method = "class", 
+                    minbucket = 25)
 prp(StevensTree)
 ```
 ![alt tag] (https://raw.githubusercontent.com/DSJacq/TAE/create-branches/Chart/JudgeJuryClassifier_StevensTree.jpeg)
