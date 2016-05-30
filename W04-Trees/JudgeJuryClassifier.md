@@ -78,6 +78,7 @@ Pred = prediction(PredictROC[,2], Test$Reverse)
 Perf = performance(Pred, "tpr", "fpr")
 plot(Perf)
 ```
+![alt tag] (https://raw.githubusercontent.com/DSJacq/TAE/create-branches/Chart/JudgeJuryComplier_StevensPerf.jpeg)
 
 - AUC
 ```coffee
