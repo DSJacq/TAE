@@ -1,8 +1,8 @@
 ### TAE W4 - TREES
 
-##### Judge, Jury, and Classifier: An Introduction to Trees
+### Judge, Jury, and Classifier: An Introduction to Trees
 
-- Source: [Supreme Court Forecasting Project] (http://wusct.wustl.edu/data.php)
+Source: [Supreme Court Forecasting Project] (http://wusct.wustl.edu/data.php)
 
 
 
@@ -16,8 +16,8 @@
 
 ##### 2. CART ((Classification and Regression Trees)
 
-- Dependent Variable | 1 = reverse, 0 = affirm
-- Independent Variable (Circuit court, Issue area, Type of petition, Unconstitutional)
+Dependent Variable | 1 = reverse, 0 = affirm
+Independent Variable (Circuit court, Issue area, Type of petition, Unconstitutional)
 
 
 
@@ -25,7 +25,7 @@
 
 ##### 3. SPLITTING AND PREDICTIONS
 
-- Error Slide 2: the percentage of observations with outcome affirm is 10/(10+2) = 0.83
+Error Slide 2: the percentage of observations with outcome affirm is 10/(10+2) = 0.83
 
 
 
@@ -52,13 +52,17 @@ library(rpart.plot)
 StevensTree = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, method = "class", minbucket = 25)
 prp(StevensTree)
 ```
+![alt tag] (https://raw.githubusercontent.com/DSJacq/TAE/create-branches/Chart/JudgeJuryClassifier_StevensTree.jpeg)
 
+```coffee
 PredictCart = predict(StevensTree, newdata = Test, type = "class")
 table(Test$Reverse, PredictCart)
+```
 
 - Accuracy
 (41+71)/(41+36+22+71)
 
+```coffee
 library(ROCR)
 PredictROC = predict(StevensTree, newdata = Test)
 PredictROC
@@ -66,18 +70,24 @@ PredictROC
 Pred = prediction(PredictROC[,2], Test$Reverse)
 Perf = performance(Pred, "tpr", "fpr")
 plot(Perf)
+```
 
 - AUC
+```coffee
 as.numeric(performance(Pred, "auc")@y.values)
+```
 
 - Splits
+```coffee
 StevensTree = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, method="class", data = Train, minbucket=5)
 prp(StevensTree)
+```
 
 - Splits
+```coffee
 StevensTree = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, method="class", data = Train, minbucket=100)
 prp(StevensTree)
-
+```
 
 
 
