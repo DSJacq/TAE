@@ -102,6 +102,7 @@ prp(StevensTree)
 
 ##### 5. RANDOM FORESTS
 
+```coffee
 install.packages("randomForest")
 library(randomForest)
 
@@ -129,13 +130,14 @@ StevensForest = randomForest(Reverse ~ Circuit + Issue + Petitioner + Respondent
 PredictForest = predict(StevensForest, newdata = Test)
 table(Test$Reverse, PredictForest)
 (44+76)/(44+33+17+76)
-
+```
 
 
 
 
 ##### 6. CROSS-VALIDATION
 
+```coffee
 install.packages("caret")
 library(caret)
 
@@ -147,14 +149,13 @@ cpGrid = expand.grid(.cp = seq(0.01, 0.5, 0.01))
 train(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, method = "rpart", trControl = numFolds, tuneGrid = cpGrid)
 
 StevensTreeCV = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, method = "class", cp = 0.18)
+
 PredictCV = predict(StevensTreeCV, newdata = Test, type = "class")
 table(Test$Reverse, PredictCV)
-
-- Accuracy
 (59+64)/(59+18+29+64)
 
 prp(StevensTreeCV) # 1 split
-
+```
 
 
 ##### 7. THE MODEL V. THE EXPERTS
