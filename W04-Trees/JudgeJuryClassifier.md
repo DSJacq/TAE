@@ -62,10 +62,10 @@ prp(StevensTree)
 ```
 ![alt tag] (https://raw.githubusercontent.com/DSJacq/TAE/create-branches/Chart/JudgeJuryClassifier_StevensMin25.jpeg)
 
+- Accuracy
 ```coffee
 PredictCart = predict(StevensTree, newdata = Test, type = "class")
 table(Test$Reverse, PredictCart)
-# Accuracy
 (41+71)/(41+36+22+71)
 ```
 
