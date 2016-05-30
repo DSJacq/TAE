@@ -137,8 +137,7 @@ table(Test$Reverse, PredictForest)
 
 ##### 6. CROSS-VALIDATION
 
-[Random Forests] (http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm)
-by Leo Breiman and Adele Cutler
+According to the creaters of the random forest algorithm, the model is not very sensitive to the parameters and therefore does not easily overfit to the training set. Check [Random Forests] (http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm) by Leo Breiman and Adele Cutler
 
 
 ```coffee
