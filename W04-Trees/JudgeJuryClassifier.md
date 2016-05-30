@@ -60,14 +60,12 @@ StevensTree = rpart(Reverse ~ Circuit
                     minbucket = 25)
 prp(StevensTree)
 ```
-![alt tag] (https://raw.githubusercontent.com/DSJacq/TAE/create-branches/Chart/JudgeJuryClassifier_StevensTree.jpeg)
+![alt tag] (https://raw.githubusercontent.com/DSJacq/TAE/create-branches/Chart/JudgeJuryClassifier_StevensMin25.jpeg)
 
 ```coffee
 PredictCart = predict(StevensTree, newdata = Test, type = "class")
 table(Test$Reverse, PredictCart)
-```
-
-- Accuracy
+# Accuracy
 (41+71)/(41+36+22+71)
 
 ```coffee
