@@ -1,38 +1,39 @@
 ### TAE W4 - TREES
 
-### Judge, Jury, and Classifier: An Introduction to Trees
+##### Judge, Jury, and Classifier: An Introduction to Trees
 
-# Source: Supreme Court Forecasting Project 
-# URL: http://wusct.wustl.edu/data.php
-
-
-
-
-
-# 1. THE SUPREME COURT
+- Source: [Supreme Court Forecasting Project] (http://wusct.wustl.edu/data.php)
 
 
 
 
 
-# 2. CART ((Classification and Regression Trees)
-# Dependent Variable | 1 = reverse, 0 = affirm
-# Independent Variable (Circuit court, Issue area, Type of petition, Unconstitutional)
+##### 1. THE SUPREME COURT
 
 
 
 
 
-# 3. SPLITTING AND PREDICTIONS
-# Error Slide 2: 
-# the percentage of observations with outcome affirm is 10/(10+2) = 0.83
+##### 2. CART ((Classification and Regression Trees)
+
+- Dependent Variable | 1 = reverse, 0 = affirm
+- Independent Variable (Circuit court, Issue area, Type of petition, Unconstitutional)
 
 
 
 
 
-# 4. CART IN R
+##### 3. SPLITTING AND PREDICTIONS
 
+- Error Slide 2: the percentage of observations with outcome affirm is 10/(10+2) = 0.83
+
+
+
+
+
+##### 4. CART IN R
+
+```coffee
 stevens = read.csv("stevens.csv")
 str(stevens)
 
@@ -50,10 +51,12 @@ library(rpart.plot)
 
 StevensTree = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, data = Train, method = "class", minbucket = 25)
 prp(StevensTree)
+```
 
 PredictCart = predict(StevensTree, newdata = Test, type = "class")
 table(Test$Reverse, PredictCart)
-# Accuracy
+
+- Accuracy
 (41+71)/(41+36+22+71)
 
 library(ROCR)
@@ -64,14 +67,14 @@ Pred = prediction(PredictROC[,2], Test$Reverse)
 Perf = performance(Pred, "tpr", "fpr")
 plot(Perf)
 
-#AUC
+- AUC
 as.numeric(performance(Pred, "auc")@y.values)
 
-# Splits
+- Splits
 StevensTree = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, method="class", data = Train, minbucket=5)
 prp(StevensTree)
 
-# Splits
+- Splits
 StevensTree = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + LowerCourt + Unconst, method="class", data = Train, minbucket=100)
 prp(StevensTree)
 
@@ -79,7 +82,7 @@ prp(StevensTree)
 
 
 
-# 5. RANDOM FORESTS
+##### 5. RANDOM FORESTS
 
 install.packages("randomForest")
 library(randomForest)
@@ -113,7 +116,7 @@ table(Test$Reverse, PredictForest)
 
 
 
-# 6. CROSS-VALIDATION
+##### 6. CROSS-VALIDATION
 
 install.packages("caret")
 library(caret)
@@ -129,11 +132,11 @@ StevensTreeCV = rpart(Reverse ~ Circuit + Issue + Petitioner + Respondent + Lowe
 PredictCV = predict(StevensTreeCV, newdata = Test, type = "class")
 table(Test$Reverse, PredictCV)
 
-# Accuracy
+- Accuracy
 (59+64)/(59+18+29+64)
 
 prp(StevensTreeCV) # 1 split
 
 
 
-# 7. THE MODEL V. THE EXPERTS
+##### 7. THE MODEL V. THE EXPERTS
