@@ -14,7 +14,7 @@ Source: [Supreme Court Forecasting Project] (http://wusct.wustl.edu/data.php)
 
 
 
-##### 2. CART ((Classification and Regression Trees)
+##### 2. CART (Classification and Regression Trees)
 
 Dependent Variable | 1 = reverse, 0 = affirm
 Independent Variable (Circuit court, Issue area, Type of petition, Unconstitutional)
