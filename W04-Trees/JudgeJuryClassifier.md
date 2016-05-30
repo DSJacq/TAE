@@ -137,6 +137,10 @@ table(Test$Reverse, PredictForest)
 
 ##### 6. CROSS-VALIDATION
 
+[Random Forests] (http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm)
+by Leo Breiman and Adele Cutler
+
+
 ```coffee
 install.packages("caret")
 library(caret)
