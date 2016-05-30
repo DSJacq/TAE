@@ -103,3 +103,62 @@ table(ClaimsTest$bucket2009)
 
 #### 8. Predicting Healthcare Costs in R
 
+library(rpart)
+library(rpart.plot)
+
+ClaimsTree = rpart(bucket2009 ~ age 
+                   + alzheimers 
+                   + arthritis 
+                   + cancer 
+                   + copd 
+                   + depression 
+                   + diabetes 
+                   + heart.failure 
+                   + ihd + kidney 
+                   + osteoporosis 
+                   + stroke 
+                   + bucket2008 
+                   + reimbursement2008, 
+                   data=ClaimsTrain, 
+                   method="class", cp=0.00005)
+prp(ClaimsTree)
+
+PredictTest = predict(ClaimsTree, newdata = ClaimsTest, type = "class")
+table(ClaimsTest$bucket2009, PredictTest)
+(114141+16102+16102+118+201+0)/nrow(ClaimsTest)
+
+# Penalty Error
+as.matrix(table(ClaimsTest$bucket2009, PredictTest))*PenaltyMatrix
+sum(as.matrix(table(ClaimsTest$bucket2009, PredictTest))*PenaltyMatrix)/nrow(ClaimsTest)
+
+ClaimsTree = rpart(bucket2009 ~ age 
+                   + alzheimers 
+                   + arthritis 
+                   + cancer 
+                   + copd 
+                   + depression 
+                   + diabetes 
+                   + heart.failure 
+                   + ihd + kidney 
+                   + osteoporosis 
+                   + stroke 
+                   + bucket2008 
+                   + reimbursement2008, 
+                   data=ClaimsTrain, 
+                   method="class", 
+                   cp=0.00005, 
+                   parms = list(loss = PenaltyMatrix))
+PredictTest = predict(ClaimsTree, newdata = ClaimsTest, type = "class")
+table(ClaimsTest$bucket2009, PredictTest)
+
+# Accuracy
+(94310+18942+4692+636+2)/nrow(ClaimsTest)
+
+# Penalty Error
+sum(as.matrix(table(ClaimsTest$bucket2009, PredictTest))*PenaltyMatrix)/nrow(ClaimsTest)
+
+
+
+
+
+#### 9. Results
