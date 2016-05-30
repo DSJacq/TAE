@@ -68,7 +68,7 @@ PredictCart = predict(StevensTree, newdata = Test, type = "class")
 table(Test$Reverse, PredictCart)
 (41+71)/(41+36+22+71)
 ```
-- 
+- ROC
 ```coffee
 library(ROCR)
 PredictROC = predict(StevensTree, newdata = Test)
