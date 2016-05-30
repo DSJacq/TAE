@@ -67,6 +67,7 @@ PredictCart = predict(StevensTree, newdata = Test, type = "class")
 table(Test$Reverse, PredictCart)
 # Accuracy
 (41+71)/(41+36+22+71)
+```
 
 ```coffee
 library(ROCR)
