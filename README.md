@@ -41,6 +41,10 @@ URL: https://www.edx.org/course/analytics-edge-mitx-15-071x-0
 
 #### W04 - Trees
 
+- Judge, Jury and Classifier: An Introduction to Tree
+- Keeping an Eye on Health Care Cost: The D2Hawkeye Story
+- Location, Location, Location: Regression Trees for Housing Data
+- State Data Revisited
 
 #### W05 - Text Analytics
 
