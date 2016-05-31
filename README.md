@@ -45,6 +45,10 @@ URL: https://www.edx.org/course/analytics-edge-mitx-15-071x-0
 - Keeping an Eye on Health Care Cost: The D2Hawkeye Story
 - Location, Location, Location: Regression Trees for Housing Data
 - State Data Revisited
+- Understanding Why People Vote
+- Letter Recognition
+- Predicting Earnings From Census Data
+- State Data (Revisited)
 
 #### W05 - Text Analytics
 
