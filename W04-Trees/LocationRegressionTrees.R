@@ -121,7 +121,6 @@ tree.sse
 # 7. Cross-Validation
 
 # Load libraries for cross-validation
-install.packages("caret")
 library(caret)
 library(e1071)
 
