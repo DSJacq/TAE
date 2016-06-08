@@ -55,7 +55,7 @@ URL: https://www.edx.org/course/analytics-edge-mitx-15-071x-0
 - Turning Tweets into Knowledge: An Introduction to Text Analytics
 - Man vs Machine: How IB Built a Jeopardy Champion
 - Predictive Coding: Bringing Text Analytics to the Courtroom
-- Detecting Vandalims on Wikipedia
+- Detecting Vandalism on Wikipedia
 - Automating Reviews in Medicine
 - Separating SPAM from HAM (Part 1)
 - Separating SPAM from HAM (Part 2) 
