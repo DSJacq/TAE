@@ -1,4 +1,4 @@
-# The Analytics Edge (Notes.R)
+# The Analytics Edge
 
 edx + MIT
 
