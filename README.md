@@ -66,8 +66,8 @@ URL: https://www.edx.org/course/analytics-edge-mitx-15-071x-0
 #### W07 - Visualization
 
 
-#### W08
+#### W08 - Linear Optimization
 
 
-#### W09
+#### W09 - Integer Optimization
 
