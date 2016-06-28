@@ -62,12 +62,48 @@ URL: https://www.edx.org/course/analytics-edge-mitx-15-071x-0
 
 #### W06 - Clustering
 
+- Recommendations Worth a MIllion: An Introduction to Clustering
+- Predictive Diagnosis: Discovering Patterns for Disease Detection
+- Seeing the Big Picture: Segmenting Images to Create Data
+- Document Clustering With Daily Kos
+- Market Segmentation for Airlines
+- Predicting Stock Returns With Cluster-then-Predict
 
 #### W07 - Visualization
 
+- Visualizing the World: An Introduction to Visualization
+- The Analytical Policeman: Visualization for Law Order
+- The Good, the Bad, and the Ugly: Visualization Recitation
+- Election Forecasting Revisited
+- Visualizing Network Data
+- Visualizing Text Data Using Word Clouds
+- Visualizing Attributes of Parole Violators
 
 #### W08 - Linear Optimization
 
+- Airline Revenue Management: An Introduction to Linear Optimization
+- Radiation Therapy: An Application of Linear Optimization
+- Google AdWords: Optimizing Online Advertising
+- Investment Management Under Taxation
+- Filatoi Riuniti
+- Gasoline Blending
+- Even' Star Organic Farm
 
 #### W09 - Integer Optimization
+
+- Sports Scheduling: An Introduction to Integer Optimization
+- eHarmony: Maximizing the Probability of Love
+- Operating Room Scheduling: making Hospitals Run Smoothly
+- Selecting Profitable Hotel Sites
+- Assigning Sales Regions at Pfizer Turkey
+- Class Assignments in an Elementary School
+- Even' Star Organic Farm Revisited
+- Gerrymandering New Mexico
+
+#### Final
+
+- Forecasting Interest Rate Hikes by the US Federal Reserve
+- Understanding Retail Consumers
+- Patterns in Renewable Energy Generation
+- Optimal Production Scheduling
 
