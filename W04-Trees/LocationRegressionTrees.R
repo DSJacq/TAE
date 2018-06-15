@@ -32,7 +32,6 @@ summary(boston$MEDV)
 points(boston$LON[boston$MEDV>=21.2], boston$LAT[boston$MEDV>=21.2], col="red", pch=20)
 
 
-
 # 3. Geographical Predictions
 
 # Linear Regression using LAT and LON
