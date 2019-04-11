@@ -1,5 +1,6 @@
 # The Analytics Edge
 
+
 edx + MIT
 
 Tools: RStudio & MO Excel
