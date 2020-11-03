@@ -4,7 +4,6 @@
 
 
 
-
 # 1.1 Predicting B or not B
 
 letters = read.csv("letters_ABPR.csv")
