@@ -92,3 +92,4 @@ TestPrediction = predict(mod2, newdata = Test, type = "response")
 table(Test$Republican, TestPrediction >= 0.5)
 
 subset(Test, TestPrediction >= 0.5 & Republican == 0)
+
